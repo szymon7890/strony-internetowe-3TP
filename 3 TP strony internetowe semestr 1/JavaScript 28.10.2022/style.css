@@ -1,0 +1,12 @@
+body {
+    margin: 0px;
+    background-color: aqua;
+}
+
+#inputOne {
+    border-radius: 30px;
+}
+
+#submit {
+    border-radius: 30px;
+}

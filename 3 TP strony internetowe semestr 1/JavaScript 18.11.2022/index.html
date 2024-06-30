@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Przypisywanie słowa odpowiedniej liczbie</title>
+        <meta name="author" content="Szymon Kalinowski">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+	<body>
+	
+		<div id="main"></div>
+	
+	</body>
+	<script>
+		// Tworzenie obiektu słownika dict
+		let dict = {};
+
+		// Definiowanie słownych odpowiedników liczb od 0 do 19
+		dict[0] = "zero";
+		dict[1] = "jeden";
+		dict[2] = "dwa";
+		dict[3] = "trzy";
+		dict[4] = "cztery";
+		dict[5] = "pięć";
+		dict[6] = "sześć";
+		dict[7] = "siedem";
+		dict[8] = "osiem";
+		dict[9] = "dziewięć";
+		dict[10] = "dziesięć";
+		dict[11] = "jedenaście";
+		dict[12] = "dwanaście";
+		dict[13] = "trzynaście";
+		dict[14] = "czternaście";
+		dict[15] = "piętnaście";
+		dict[16] = "szesnaście";
+		dict[17] = "siedemnaście";
+		dict[18] = "osiemnaście";
+		dict[19] = "dziewiętnaście";
+		
+		// Pętla iteruje od 2 do 9 (włącznie)
+		for (i = 2; i <= 9; i++) {
+			// Tworzy słownikowe odpowiedniki liczb dziesiątek (20, 30, ..., 90)
+			dict[i * 10] = dict[i] + "dzieścia";
+		}
+
+		// Pętla iteruje od 21 do 98 (włącznie)
+		for (i = 21; i < 99; i++) {
+			// Warunek sprawdza, czy liczba nie jest wielokrotnością 10
+			if (i % 10 != 0) {
+				// Tworzy słownikowe odpowiedniki liczb dwucyfrowych, łącząc słowny odpowiednik dziesiątek i jedności
+				dict[i] = dict[(i - i % 10)] + " " + dict[i % 10];
+			}
+		}
+
+		// Inicjalizacja zmiennej wynik jako pusty ciąg znaków
+		let wynik = "";
+		
+		// Pętla iteruje od 0 do 99 (włącznie)
+		for (let i = 0; i <= 99; i++) {
+			// Wyświetlenie w konsoli słownikowego odpowiednika liczby i
+			console.log(dict[i]);
+			// Dodanie do zmiennej wynik słownikowego odpowiednika liczby i, z dodanym znacznikiem </br>
+			wynik += dict[i] + "</br>";
+		}
+
+		// Ustawienie HTML wewnątrz elementu o id "main" na wartość zmiennej wynik
+		document.getElementById("main").innerHTML = wynik;
+	</script>
+</html>

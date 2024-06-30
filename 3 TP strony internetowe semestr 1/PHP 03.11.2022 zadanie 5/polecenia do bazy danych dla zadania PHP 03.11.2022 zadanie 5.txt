@@ -1,0 +1,14 @@
+CREATE DATABASE biblioteka03112022;
+
+CREATE TABLE klient (
+	id_klienta INT AUTO_INCREMENT PRIMARY KEY,
+	nazwisko VARCHAR(50) NOT NULL,
+	imie VARCHAR(50) NOT NULL,
+	plec ENUM('M', 'F') NOT NULL,
+	pesel VARCHAR(11) NOT NULL,
+	telefon VARCHAR(15) NOT NULL
+);
+
+
+INSERT INTO klient (nazwisko, imie, plec, pesel, telefon) VALUES ('Kowalski', 'Jan', 'M', '12345678901', '123456789');
+INSERT INTO klient (nazwisko, imie, plec, pesel, telefon) VALUES ('Nowak', 'Anna', 'F', '23456789012', '987654321');

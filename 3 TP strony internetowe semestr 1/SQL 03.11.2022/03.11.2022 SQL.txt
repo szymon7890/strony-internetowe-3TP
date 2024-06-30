@@ -1,0 +1,28 @@
+Zad.1-1.World
+Utwórz ranking ilości populacji państw Afryki.                    (przedstaw to jako wykres exel)
+SELECT Name,Population FROM country where Continent='Africa' order by Population desc;
+
+
+Utwórz ranking przewidywanej średniej życia państw Afryki.        (przedstaw to jako wykres exel)
+SELECT Name,LifeExpectancy FROM country WHERE Continent='Africa' ORDER BY LifeExpectancy DESC;
+
+
+Jakie są 3 najpopularniejsze oficjalne języki na każdym kontynencie.
+rosnące i malejące
+
+asc i desc
+LIMIT 1
+
+SELECT Language,Percentage FROM countrylanguage ORDER BY Percentage DESC LIMIT 3;
+
+
+Jakie są 3 najpopularniejsze oficjalne języki na każdym kontynencie.
+SELECT Language,IsOfficial,Percentage FROM countrylanguage WHERE IsOfficial='T' ORDER BY Percentage DESC LIMIT 3;
+
+
+Wyświetl nieoficjalne języki, których procent użycia przekracza 50%.
+SELECT Language,IsOfficial,Percentage FROM countrylanguage WHERE Percentage > 50 and IsOfficial='F' ORDER BY Percentage DESC;
+
+
+Wyświetl 3 największe miasto Włoch względem populacji.
+SELECT Name,Population FROM city WHERE CountryCode="ITA" ORDER BY Population DESC LIMIT 3;

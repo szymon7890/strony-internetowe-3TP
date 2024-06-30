@@ -1,0 +1,28 @@
+#squareOne {
+    background-color: black;    /* Ustawienie koloru tła na czarny */
+    width: 150px;               /* Ustawienie szerokości na 150 pikseli */
+    height: 150px;              /* Ustawienie wysokości na 150 pikseli */
+}
+
+#squareTwo {
+    background-color: blue;     /* Ustawienie koloru tła na niebieski */
+    width: 150px;               /* Ustawienie szerokości na 150 pikseli */
+    height: 150px;              /* Ustawienie wysokości na 150 pikseli */
+    margin-left: 250px;         /* Ustawienie marginesu z lewej strony na 250 pikseli */
+    margin-top: -150px;         /* Przesunięcie do góry o 150 pikseli (efekt nachodzenia na poprzedni element) */
+}
+
+#squareThree {
+    background-color: red;      /* Ustawienie koloru tła na czerwony */
+    width: 150px;               /* Ustawienie szerokości na 150 pikseli */
+    height: 150px;              /* Ustawienie wysokości na 150 pikseli */
+    margin-left: 500px;         /* Ustawienie marginesu z lewej strony na 500 pikseli */
+    margin-top: -150px;         /* Przesunięcie do góry o 150 pikseli (efekt nachodzenia na poprzedni element) */
+}
+
+#rectangleOne {
+    background-color: blueviolet;   /* Ustawienie koloru tła na fioletowy */
+    width: 300px;                   /* Ustawienie szerokości na 300 pikseli */
+    height: 100px;                  /* Ustawienie wysokości na 100 pikseli */
+    margin-top: 50px;               /* Ustawienie marginesu z góry na 50 pikseli */
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ankieta Online</title>
+		<meta name="author" content="Szymon Kalinowski">
+		<link rel="stylesheet" href="styles.css">
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<form action="script.php" method="post">
+			<!-- Sekcja dotycząca wieku użytkownika -->
+			<p>Podaj swój wiek: </p>
+			<input type="radio" name="podajwiek" value="1"> 16-25<br>
+			<input type="radio" name="podajwiek" value="2"> 26-35<br>
+			<input type="radio" name="podajwiek" value="3"> 36-45<br>
+			<input type="radio" name="podajwiek" value="4"> 46-60<br>
+			<input type="radio" name="podajwiek" value="5"> 61-75<br>
+			<input type="radio" name="podajwiek" value="6"> 76-100<br>
+
+			<!-- Sekcja dotycząca płci użytkownika -->
+			<p>2. Podaj swoją płeć: </p>
+			<input type="radio" name="podajplec" value="1"> mężczyzna<br>
+			<input type="radio" name="podajplec" value="2"> kobieta<br>
+
+			<!-- Sekcja oceny produktu -->
+			<p>3. Jak oceniasz swoją satysfakcję z produktu? </p>
+			<input type="radio" name="ocena" value="1"> 1<br>
+			<input type="radio" name="ocena" value="2"> 2<br>
+			<input type="radio" name="ocena" value="3"> 3<br>
+			<input type="radio" name="ocena" value="4"> 4<br>
+			<input type="radio" name="ocena" value="5"> 5<br>
+
+			<!-- Sekcja uwag użytkownika -->
+			<p>4. Czy masz jakieś uwagi dotyczące produktu? </p>
+			<input type="text" name="uwagi"><br>
+
+			<!-- Sekcja dotycząca korzystania z podobnych produktów -->
+			<p>5. Czy korzystasz z podobnych produktów innych marek? </p>
+			<input type="checkbox" name="marki" value="1"> Product1<br>
+			<input type="checkbox" name="marki" value="2"> Product2<br>
+
+			<!-- Sekcja dotycząca wyróżników produktu -->
+			<p>6. Co twoim zdaniem wyróżnia nasz produkt na tle innych produktów tego samego typu. </p>
+			<input type="text" name="opinia2"><br>
+
+			<!-- Przycisk do wysłania formularza -->
+			<input type="submit">
+		</form>
+	</body>
+</html>

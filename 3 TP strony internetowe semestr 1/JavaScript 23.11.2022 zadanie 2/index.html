@@ -1,0 +1,43 @@
+<!DOCTYPE html> <!-- Deklaracja doctype dla HTML -->
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr"> <!-- Otwarcie tagu <html> z atrybutami lang="en" (język angielski) i dir="ltr" (kierunek tekstu lewo-do-prawo) -->
+<head>
+    <meta charset="utf-8"> <!-- Ustawienie kodowania znaków na UTF-8 -->
+    <title>Language Translator</title> <!-- Tytuł strony -->
+    <link rel="stylesheet" href="style.css"> <!-- Ładowanie zewnętrznego arkusza stylów CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ustawienie widoku na urządzeniach mobilnych -->
+    <!-- Font Awesome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> <!-- Ładowanie biblioteki Font Awesome dla ikon -->
+</head>
+<body>
+    <div class="container"> <!-- Kontener główny -->
+        <div class="wrapper"> <!-- Wrapper - kontener dla zawartości -->
+            <div class="text-input"> <!-- Kontener dla pól tekstowych -->
+                <textarea spellcheck="false" class="from-text" placeholder="Enter text"></textarea> <!-- Pole tekstowe "from" -->
+                <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Translation"></textarea> <!-- Pole tekstowe "to" zablokowane do edycji -->
+            </div>
+            <ul class="controls"> <!-- Lista dla kontrolek -->
+                <li class="row from"> <!-- Pierwszy element listy dla wyboru języka źródłowego -->
+                    <div class="icons"> <!-- Kontener dla ikon -->
+                        <i id="from" class="fas fa-volume-up"></i> <!-- Ikona głośnika dla odczytu -->
+                        <i id="from" class="fas fa-copy"></i> <!-- Ikona kopiowania tekstu -->
+                    </div>
+                    <select></select> <!-- Lista rozwijana dla wyboru języka źródłowego -->
+                </li>
+                <li class="exchange"><i class="fas fa-exchange-alt"></i></li> <!-- Ikona wymiany języków -->
+                <li class="row to"> <!-- Element listy dla wyboru języka docelowego -->
+                    <select></select> <!-- Lista rozwijana dla wyboru języka docelowego -->
+                    <div class="icons"> <!-- Kontener dla ikon -->
+                        <i id="to" class="fas fa-volume-up"></i> <!-- Ikona głośnika dla odczytu -->
+                        <i id="to" class="fas fa-copy"></i> <!-- Ikona kopiowania tekstu -->
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button>Translate Text</button> <!-- Przycisk do uruchomienia tłumaczenia -->
+    </div>
+
+    <script src="js/countries.js"></script> <!-- Ładowanie pliku JavaScript z listą krajów -->
+    <script src="js/script.js"></script> <!-- Ładowanie głównego pliku JavaScript -->
+</body>
+</html>

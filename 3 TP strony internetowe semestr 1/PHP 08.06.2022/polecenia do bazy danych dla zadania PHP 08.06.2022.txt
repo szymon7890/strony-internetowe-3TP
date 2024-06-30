@@ -1,0 +1,14 @@
+CREATE DATABASE szkola08062022;
+
+CREATE TABLE uczen (
+        id INT NOT NULL AUTO_INCREMENT,
+        imie VARCHAR(25),
+        nazwisko VARCHAR(25),
+        srednia_ocen INT,
+	PRIMARY KEY (id)
+);
+
+INSERT INTO uczen (id, imie, nazwisko, srednia_ocen) VALUES (NULL, 'Anna', 'Kowalska', 4);
+INSERT INTO uczen (id, imie, nazwisko, srednia_ocen) VALUES (NULL, 'Jan', 'Nowak', 5);
+INSERT INTO uczen (id, imie, nazwisko, srednia_ocen) VALUES (NULL, 'Maria', 'Wiśniewska', 3);
+INSERT INTO uczen (id, imie, nazwisko, srednia_ocen) VALUES (NULL, 'Piotr', 'Jankowski', 4);

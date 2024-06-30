@@ -1,0 +1,12 @@
+CREATE DATABASE ankietaOnline03112022;
+	
+CREATE TABLE `FormularzOnline` (
+	id INT AUTO_INCREMENT NOT NULL,
+	wiek VARCHAR(10),
+	plec VARCHAR(30),
+	ocena INT,
+	uwagi VARCHAR(200),
+	inne_produkty VARCHAR(20),
+	atrybuty_produktu VARCHAR(200),
+	PRIMARY KEY (id)
+);

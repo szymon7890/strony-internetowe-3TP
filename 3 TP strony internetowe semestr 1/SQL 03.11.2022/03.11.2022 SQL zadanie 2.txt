@@ -1,0 +1,39 @@
+Zad.2a.Utwórz raport sprzedaży bazy danych northwind produktów o id 1 i 4 sprzedanych w okresie letnim roku 1995.
+2b Tofu i Ravioli Angelo w roku 1994.
+
+1.Utwórz zapytanie mysql w phpMyadmin wyświetlające dane dotyczące danego produktu
+2.Skopiuj dane i wstaw dane do tabeli exel
+3.Przestaw nazwę produktu,ilość sztuk sprzedanych w danym mięsiącu, przychody z sprzedarzy produktów
+3.Napisz jak [w procentach] sprzedarz produktu:
+    -wzrosła/zmalała w porównaniu do uprzedniego miesiąca dla tego samego produktu
+    -zostało sprzedane więcej/mniej w porównianiu do drugiego produktu
+
+
+Zad.2a.Utwórz raport sprzedaży bazy danych northwind produktów o id 1 i 4 sprzedanych w okresie letnim roku 1995.
+
+SELECT
+	*
+FROM
+	products
+JOIN
+	`order details` ON `order details`.`ProductID` = `products`.`ProductID`
+JOIN
+	`orders` ON `orders`.`OrderID` = `order details`.`OrderID`
+WHERE
+	(products.ProductID = 1 or products.ProductID = 4) AND (OrderDate like '1995-06%' or OrderDate like '1995-07%' or OrderDate like '1995-08%' or OrderDate like '1995-09%')
+
+
+SELECT
+	*
+FROM
+	products
+JOIN
+	`order details` ON `order details`.`ProductID` = `products`.`ProductID`
+JOIN
+	`orders` ON `orders`.`OrderID` = `order details`.`OrderID`
+WHERE
+	(products.ProductName LIKE '%Tofu%' or products.ProductName LIKE '%Ravioli%' LIKE products.ProductName LIKE '%Angelo%') AND (OrderDate like '1994%')
+
+
+SELECT * FROM products WHERE products.ProductID = 7;
+

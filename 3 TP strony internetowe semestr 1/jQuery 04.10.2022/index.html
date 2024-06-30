@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Przykład zliczania dat</title>
+		<meta name="author" content="Szymon Kalinowski">
+		<link rel="stylesheet" href="styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div>
+			<!-- Pola wejściowe dla daty -->
+			<label for="fromDate">From Date :</label>
+			<input type="date" id="fromDate" name="fromDate">
+			<br/><br/>
+			<label for="toDate">To Date :</label>
+			<input type="date" id="toDate" name="toDate">
+			<br/><br/>
+			<!-- Przycisk do obliczania różnicy między datami -->
+			<button id="show">Show me the Different </button>
+			<br/><br/>
+			<!-- Pole wyświetlające różnicę między datami -->
+			<label for="dateDiff">Date Different</label>
+			<input type="text" id="dateDiff" name="dateDiff">
+		</div>
+		<script>
+			// Obsługa zdarzenia kliknięcia przycisku
+			$("#show").click( function(){
+				
+				// Pobierz wartości z pól dat
+				let fromDate = $('input[name="fromDate"]').val();
+				console.log(fromDate);
+				
+				let toDate = $('input[name="toDate"]').val();
+				console.log(toDate);
+				
+				// Konwersja na obiekty Date
+				const date1 = new Date(fromDate);
+				const date2 = new Date(toDate);
+				
+				let diff = 0;
+				
+				if (date1 && date2) {
+					// Oblicz różnicę w dniach
+					// ms per day = 1000 * 60 * 60 * 24 = 86400000
+					diff = Math.floor((date2.getTime() - date1.getTime()) / 86400000); 
+					console.log(diff);
+				}
+				
+				// Wyświetl różnicę w dniach
+				diff = diff + " days";		
+				$('#dateDiff').val(diff);
+			});
+		</script>
+	</body>
+</html>

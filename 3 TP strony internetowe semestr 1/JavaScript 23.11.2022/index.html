@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sprawdzanie czy liczba jest szczęśliwa</title>
+        <meta name="author" content="Szymon Kalinowski">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <!-- Pole do wprowadzenia liczby -->
+        <label>Wprowadź liczbę: </label><input type="number" id="a">
+        <!-- Przycisk do wywołania funkcji happy() -->
+        <input type="submit" value="Sprawdź" onclick="happy()">
+        
+        <script type="text/javascript">
+            function happy() {
+                // Pobranie wartości wprowadzonej do pola input
+                var num = Number(document.getElementById("a").value);
+                var temp, rem, sum = 0;
+                
+                // Przechowanie oryginalnej liczby w zmiennej temp
+                temp = num;
+                
+                // Pętla wykonująca się dopóki sum nie jest równa 1 (liczba szczęśliwa) lub 4 (nie jest liczbą szczęśliwą)
+                while (sum != 1 && sum != 4) {
+                    sum = 0;
+                    
+                    // Obliczenie sumy kwadratów cyfr liczby
+                    while (temp != 0) {
+                        rem = temp % 10;
+                        sum = sum + rem * rem;
+                        temp = parseInt(temp / 10);
+                    }
+                    
+                    // Aktualizacja temp na wartość sum dla kolejnej iteracji
+                    temp = sum;
+                }
+                
+                // Sprawdzenie czy ostateczna suma jest równa 1 (liczba szczęśliwa) lub nie
+                if (sum == 1)
+                    alert(num + " jest liczbą szczęśliwą");
+                else
+                    alert(num + " nie jest liczbą szczęśliwą");
+            }
+        </script>
+    </body>
+</html>

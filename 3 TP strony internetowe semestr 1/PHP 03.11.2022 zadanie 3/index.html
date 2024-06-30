@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tworzenie pliku txt przy pomocy formularza</title>
+        <meta name="author" content="Szymon Kalinowski">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div>Tworzenie pliku txt przy pomocy formularza.</div>
+        <!-- Formularz do wprowadzania danych użytkownika -->
+        <form action="script.php" method="POST">
+            <label>Podaj imie: </label><input type="text" name="name"><br>
+            <!-- Pole tekstowe dla imienia użytkownika -->
+            <label>Podaj nazwisko: </label><input type="text" name="komentarz"><br>
+            <!-- Pole tekstowe dla komentarza użytkownika -->
+            <label>Podaj datę urodzenia: </label><input type="date" name="urodziny"><br>
+            <!-- Pole daty dla urodzin użytkownika -->
+            <input type="submit">
+            <!-- Przycisk do przesłania formularza -->
+        </form>
+    </body>
+</html>

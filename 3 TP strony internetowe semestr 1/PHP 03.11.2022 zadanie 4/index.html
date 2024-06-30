@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Wyświetlanie danych z formularza</title>
+		<meta name="author" content="Szymon Kalinowski">
+		<link rel="stylesheet" href="styles.css">
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<div>Wyświetlanie danych z formularza</div>
+		<!-- Formularz wysyłający dane do pliku welcome.php za pomocą metody POST -->
+		<form action="script.php" method="post">
+			<!-- Pole tekstowe do wprowadzenia imienia -->
+			<label>Name: </label><input type="text" name="nameA"></br>
+			<!-- Pole tekstowe do wprowadzenia nazwiska -->
+			<label>LastName: </label><input type="text" name="nameB"></br>
+			<!-- Pole do wprowadzenia daty urodzenia -->
+			<label>Age: </label><input type="date" name="age"></br>
+			
+			<!-- Przycisk do wysłania formularza -->
+			<input type="submit">
+		</form>
+	</body>
+</html>
