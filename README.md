@@ -33,7 +33,7 @@ To repozytorium zawiera projekty związane z moją klasą szkolną 3 TP. które 
 24. [JavaScript 05.04.2023](https://github.com/szymon7890/strony-internetowe-3TP/tree/main/3%20TP%20strony%20internetowe%20semestr%202/JavaScript%2005.04.2023): Sortowanie bąbelkowe. 
 25. [JavaScript 05.04.2023 zadanie 2](https://github.com/szymon7890/strony-internetowe-3TP/tree/main/3%20TP%20strony%20internetowe%20semestr%202/JavaScript%2005.04.2023%20zadanie%202): Animacja sortowania bąbelkowego w czasie rzeczywistym.
 26. [JavaScript 18.04.2023](https://github.com/szymon7890/strony-internetowe-3TP/tree/main/3%20TP%20strony%20internetowe%20semestr%202/JavaScript%2018.04.2023): JavaScript sortowanie liniowe.
-27. [React Pogoda](): Strona internetowa pokazująca stopnie temperatury
+27. [React Pogoda](https://github.com/szymon7890/strony-internetowe-3TP/tree/main/3%20TP%20strony%20internetowe%20semestr%202/React%20Pogoda): Strona internetowa pokazująca stopnie temperatury
 
 ## Wymagania techniczne:
 
