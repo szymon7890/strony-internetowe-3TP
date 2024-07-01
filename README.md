@@ -42,6 +42,8 @@ To repozytorium zawiera projekty związane z moją klasą szkolną 3 TP. które 
 - JavaScript
 - PHP
 - SQL
+- jQuery
+- React
 
 Dzięki tym projektom chcemy pokazać praktyczne doświadczenie w tworzeniu stron internetowych i udoskonalać moich umiejętności.
 
