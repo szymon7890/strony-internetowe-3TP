@@ -1,0 +1,44 @@
+/* Ustawienie tekstu na środku dla klasy .App */
+.App {
+  text-align: center;
+}
+
+/* Styl dla logotypu aplikacji */
+.App-logo {
+  height: 40vmin; /* Wysokość logotypu jako 40% wysokości widoku */
+  pointer-events: none; /* Logotyp nie reaguje na zdarzenia myszy */
+}
+
+/* Animacja dla .App-logo tylko jeśli preferencja zmniejszonego ruchu nie jest ustawiona */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear; /* Animacja obracania logo w nieskończoność przez 20 sekund z liniowym przejściem */
+  }
+}
+
+/* Styl dla nagłówka aplikacji */
+.App-header {
+  background-color: #282c34; /* Kolor tła nagłówka */
+  min-height: 100vh; /* Minimalna wysokość nagłówka jako 100% wysokości widoku */
+  display: flex; /* Ustawienie kontenera na flexbox */
+  flex-direction: column; /* Ustawienie kierunku flexbox na kolumnowy */
+  align-items: center; /* Wyśrodkowanie elementów wzdłuż osi X */
+  justify-content: center; /* Wyśrodkowanie elementów wzdłuż osi Y */
+  font-size: calc(10px + 2vmin); /* Rozmiar czcionki obliczany w zależności od wielkości widoku */
+  color: white; /* Kolor tekstu */
+}
+
+/* Styl dla linków w aplikacji */
+.App-link {
+  color: #61dafb; /* Kolor akcentu dla linków */
+}
+
+/* Animacja obracania logotypu */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); /* Początkowy obrót logotypu */
+  }
+  to {
+    transform: rotate(360deg); /* Obrót logotypu o 360 stopni */
+  }
+}

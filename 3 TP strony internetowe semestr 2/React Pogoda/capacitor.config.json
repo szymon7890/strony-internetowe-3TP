@@ -1,0 +1,9 @@
+{
+  "appId": "io.ionic.nameofyourapp",
+  "appName": "Pogoda",
+  "webDir": "build",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
+}
